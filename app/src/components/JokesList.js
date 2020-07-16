@@ -17,8 +17,8 @@ return (
             <p className= "error">Uh oh, something happened....{props.error}</p>
         )}
         {props.jokes.length > 0 && (
-            <div> {props.jokes.map(joke => (
-                <div key= {joke.id}> {joke.setup}{joke.punchline} </div>
+            <div className="card"> {props.jokes.map(joke => (
+                <div className="card-content" key= {joke.id}> <h2>Joke #{joke.id} </h2>{joke.setup}<h3>Punchline</h3>{joke.punchline} </div>
             ))}
             </div>
         )}

@@ -20,7 +20,7 @@ export const fetchJokes = () => {
         .get("https://official-joke-api.appspot.com/random_ten")
         .then(res => {
             //res.data
-            dispatch({ type: FETCH_JOKES_START, payload: res.data}) //Fetching jokes 
+            dispatch({ type:FETCH_JOKES_SUCESS, payload: res.data}) //Fetching jokes 
         })
         .catch(err => {
             dispatch({ type:FETCH_JOKES_FAILURE, payload: err.message })

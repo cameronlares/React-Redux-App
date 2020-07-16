@@ -7,7 +7,7 @@ import JokesList from './components/JokesList';
 function App() {
   return (
     <div className="App">
-      <h1> Top 10 Jokes of The Day</h1>
+      <h1> Top 10 Corny Jokes of The Day</h1>
       <JokesList/>
     </div>
   );

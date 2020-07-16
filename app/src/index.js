@@ -12,7 +12,7 @@ import {reducer} from "./reducers/reducers"
 
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer, applyMiddleware(thunk,logger));
+const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 ReactDOM.render(
   <React.StrictMode>
